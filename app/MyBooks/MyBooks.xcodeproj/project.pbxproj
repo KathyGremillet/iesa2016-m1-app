@@ -15,6 +15,8 @@
 		1C0AA4C91D194B5D004E65DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C0AA4C71D194B5D004E65DC /* LaunchScreen.storyboard */; };
 		1C0AA4D41D194B5D004E65DC /* MyBooksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0AA4D31D194B5D004E65DC /* MyBooksTests.swift */; };
 		1C0AA4DF1D194B5D004E65DC /* MyBooksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0AA4DE1D194B5D004E65DC /* MyBooksUITests.swift */; };
+		1C0AA4ED1D196BC3004E65DC /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0AA4EC1D196BC3004E65DC /* Book.swift */; };
+		1C0AA4EF1D196D9B004E65DC /* BookStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0AA4EE1D196D9B004E65DC /* BookStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		1C0AA4DA1D194B5D004E65DC /* MyBooksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyBooksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C0AA4DE1D194B5D004E65DC /* MyBooksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBooksUITests.swift; sourceTree = "<group>"; };
 		1C0AA4E01D194B5D004E65DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C0AA4EC1D196BC3004E65DC /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Book.swift; path = MyBooks/Book.swift; sourceTree = "<group>"; };
+		1C0AA4EE1D196D9B004E65DC /* BookStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BookStore.swift; path = MyBooks/BookStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,8 @@
 		1C0AA4B01D194B5D004E65DC = {
 			isa = PBXGroup;
 			children = (
+				1C0AA4EC1D196BC3004E65DC /* Book.swift */,
+				1C0AA4EE1D196D9B004E65DC /* BookStore.swift */,
 				1C0AA4BB1D194B5D004E65DC /* MyBooks */,
 				1C0AA4D21D194B5D004E65DC /* MyBooksTests */,
 				1C0AA4DD1D194B5D004E65DC /* MyBooksUITests */,
@@ -259,8 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C0AA4ED1D196BC3004E65DC /* Book.swift in Sources */,
 				1C0AA4C11D194B5D004E65DC /* DetailViewController.swift in Sources */,
 				1C0AA4BF1D194B5D004E65DC /* MasterViewController.swift in Sources */,
+				1C0AA4EF1D196D9B004E65DC /* BookStore.swift in Sources */,
 				1C0AA4BD1D194B5D004E65DC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,6 +409,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = MyBooks/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kotkot.MyBooks;
@@ -412,6 +421,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = MyBooks/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kotkot.MyBooks;
